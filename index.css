@@ -7,7 +7,7 @@ body{
     display:flex;
      justify-content:center;
     min-height:100vh;
-    background:url(vecteezy_hand-drawn-wildlife-landscape-with-deer-mountains-and-lake_.jpg )no-repeat;
+    background:url(./vecteezy_hand-drawn-wildlife-landscape-with-deer-mountains-and-lake_.webp)no-repeat;
    background-size: cover;
    background-position:center;   /*IMPORTANT THING*/
    
