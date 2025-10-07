@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+body{
+    display:flex;
+     justify-content:center;
+    min-height:100vh;
+    background:url(vecteezy_hand-drawn-wildlife-landscape-with-deer-mountains-and-lake_.jpg )no-repeat;
+   background-size: cover;
+   background-position:center;   /*IMPORTANT THING*/
+   
+}
+header{
+    height:7vh;
+    width:100vw;
+    padding:10px ;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    /* z-index:99; */
+}
+h2{
+    font-size:1.65em;
+    color:#fff;
+
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+   margin-left:50px;     /* CHANGE IT FOR RESPOSIVENESS*/
+   font-weight:500;
+   font-size:1.1em;
+   
+}
+@media(min-width:1400px)and (max-width:3400px){
+.forget label {
+    position: relative;
+    top:-1.27vh;
+    left: 1.6vw;
+}
+}
+@media(min-width:750px)and (max-width:1400px){
+     .container{
+           position:absolute;
+    top:30vh;
+    left:26vw;
+    }
+    .forget label {
+    position: relative;
+    top:-1.27vh;
+    left: 1.6vw;
+}
+   
+}
+
+@media ( min-width:520px )and ( max-width:690px){
+    nav a{
+        margin-left:10px;
+    }
+     .container{
+           position:absolute;
+    top:30vh;
+    left:18vw;
+    }
+     .forget label {
+    position: relative;
+    top:-1.27vh;
+    left: 1.6vw;
+}
+     
+}
+@media ( min-width:400px )and ( max-width:520px){
+    nav a{
+        margin-left:5px;
+        font-size:.9em;
+    }
+    header{
+        padding:2px;
+    }
+    .lo-gin{
+       width:50px;
+        margin:0px 0px 0px 0px ;
+          font-size:.8em;
+        height:25px;
+        
+    }
+     .container{
+           position:absolute;
+    top:30vh;
+    left:10vw;
+    }
+     .forget label {
+    position: relative;
+    top:-1.27vh;
+    left: 1.6vw;
+}
+}
+@media ( min-width:340px )and ( max-width:400px){
+    nav a{
+        margin-left:3px;
+        font-size:.9em;
+    }
+    header{
+        padding:2px;
+    }
+    .lo-gin{
+       width:45px;
+        margin:0px 0px 0px 0px ;
+        font-size:.8em;
+        height:25px;
+        
+    }
+      .container{
+           position:absolute;
+    top:30vh;
+    left:5.9vw;
+    }
+     .forget label {
+    position: relative;
+    top:-1.27vh;
+    left: 1.6vw;
+}
+}
+
+
+nav button{
+    color:white;
+    font-size:1em;
+    margin: 0px 20px 0px 15px;  /*  CHANGE IT FOR RESPOSIVENESS */
+    width:68px;
+    height:32px;
+    font-weight:550;
+    border:2px solid white;
+    border-radius:3px;
+    background:transparent;
+    cursor:pointer;
+    transition:0.3s;
+    /* outline :none; */
+}
+
+/* ALL HOVER EFFECTS */
+
+nav button:hover{
+    background-color:#fff;
+    color:black;
+}
+nav a:hover{
+    transition:0.2s;
+    font-size:1.16em;
+    text-decoration:underline;
+}
+.container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    top:30vh;
+    right:40vw;    /*NEED TO CHNAGE THIS WHILE ADDING MEDIA QUERIES*/
+    background:transparent;
+    height:365px;
+    width:325px;
+    border:2px solid rgb(139, 155, 133);
+    border-radius:10px;
+    backdrop-filter:blur(2px);
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+}
+
+.close{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    top:0%;
+    right:0%;
+    height:30px;
+    width:30px;
+background-color:#162938;
+color:white;
+font-size:1.5em;
+border-bottom-left-radius: 10px;
+cursor:pointer;
+z-index:1;
+}
+.close:hover{
+    background-color:rgb(168, 193, 168);
+    color:black;
+}
+.container h2{
+    font-size:2em;
+    color:#162938;
+    text-align: center;
+}
+.container .login{
+    padding:40px;
+    width:100%;
+   
+}
+.container .input{
+    position:relative;
+    height:40px;
+    width:100%;
+    border-bottom:2px solid #162938;
+    margin:30px 0;
+
+}
+.container input{
+    height:100%;
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:black;
+    font-size:1em;
+    font-weight:600;
+    padding:0px 35px 0px 5px;
+}
+.input label{
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform:translateY(-50%);
+    font-size:1rem;
+    font-weight:500;
+    pointer-events:none;
+}
+.input input:focus~label,
+.input input:valid~label{
+    top:-5px;
+}
+.input span{
+position:absolute;
+right:8px;
+line-height:58px;
+font-size:1em;
+}
+
+.forget label {
+    position:relative;
+    top:-1.21em;
+}
+
+ .forget{
+    font-size:.9em;
+    color:black;
+ display:flex;
+    justify-content:space-between;
+    font-weight:500;
+     margin:-15px 0 5px;
+} 
+.forget a {
+    color:black;
+    text-decoration:none;
+}
+.forget a:hover {
+    text-decoration:underline;
+}
+.btn{
+    height:40px;
+    width:100%;
+    font-size:1em;
+    font-weight:600;
+    background-color:#162938;
+    border:none;
+    outline:none;
+    border-radius:6px;
+    cursor:pointer;
+    color:#fff;
+}
+.btn:hover{
+    color:black;
+    background-color:rgba(74, 121, 61, 0.597);
+}
+.login-register{
+font-size:.9em;
+text-align:center;
+font: weight 500;
+margin:20px 0 0 0  ;
+color:#030303;
+}
+.login-register a{
+    color:#030303;
+    text-decoration:none;
+    margin-left:2px;
+    font-weight:550;
+}
+.login-register a:hover{
+    text-decoration:underline;
+    
+}
+
+
+/* REGISTER SECTION:- */
+
+.register{
+    display:none;
+}
+.register h2{
+   position:relative;
+top:15px;
+
+}
+
+/* .forget input{
+    position:relative;
+   right:55%;
+   bottom:15%;
+
+} */
+.forget input{
+    position:relative;
+    top:1.2em;
+    right:4.5em;
+    height:12px; 
+accent-color: black;
+} 
+.regbtn{
+    position:relative;
+bottom:10px;
+}
+.logintwo{
+margin:0px 0px 10px 0px ;
+}
+#sp{
+    accent-color: black;
+      position:relative;
+         height:12px; 
+    top:1.25em;
+    right:8.5em;
+ 
+
+}
